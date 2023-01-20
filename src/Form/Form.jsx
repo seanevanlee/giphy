@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 
 export default function Form({ liftGiphyTitle}) {
-	const[title, setTitle] = useState('')
+	const [title, setTitle] = useState('')
 	function handleChange(e){
 		setTitle(e.target.value)
 	}
@@ -11,7 +11,7 @@ export default function Form({ liftGiphyTitle}) {
 		liftGiphyTitle(title)
 	}
 	return (
-	<form>
+	<form onSubmit={handleSubmit}>
 		<label>Your GIF:</label>
 		<input type="text" name="title" placeholder="GIF PARTY!"
 		onChange={handleChange}
