@@ -1,7 +1,9 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import Form from "./Form/Form";
 
+// API Key = WuROYytKW72swH5KuAfXOMhYb5pPyKiO
 function App() {
   const [count, setCount] = useState(0)
 
